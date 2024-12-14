@@ -1,0 +1,95 @@
+@import '../../variables';
+#services {
+    p {
+        font-family: $openRegular;
+    }
+}
+
+.content1Service1 {
+    background-color: #002F43;
+    width: 40%;
+}
+
+.content1Service12 {
+    width: 60%;
+    height: 100%;
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.sectionBanerServices {
+    height: 565px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+.titleMainServices {
+    h1 {
+        color: #fff;
+        font-size: 50px;
+    }
+}
+
+.desMainServices {
+    p {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.textMainServices {
+    padding-left: 211px;
+    padding-right: 48px;
+    height: 100%;
+    color: #fff;
+}
+
+.sectionBanerMobile {
+    display: none;
+}
+
+@media (max-width:992px) {
+    .cardServicesDestkop {
+        display: none !important;
+    }
+    .sectionBanerMobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloMobile {
+        text-align: center;
+        background-color: $dark-blue;
+        padding: 20px;
+        h1 {
+            font-size: 30px;
+            color: $white;
+        }
+    }
+    .descriptionMobile {
+        background-color: $dark-blue;
+        text-align: center;
+        p {
+            font-size: 25px;
+            color: $white;
+            padding: 20px 62px 20px 62px;
+        }
+    }
+    .imgMobile {
+        img {
+            height: 466px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1193px) { 
+    .sectionTextMainServices{
+        padding-left: 7% !important;
+        text-align: center !important;
+    }
+}

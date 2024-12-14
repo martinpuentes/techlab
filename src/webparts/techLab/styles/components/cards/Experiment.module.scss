@@ -1,0 +1,71 @@
+@import '../../variables';
+
+#experiment {
+    /*   box-shadow: 2px 2px 4px 4px #dfdede; */
+    margin: 10px;
+    transition: all 0.3s ease-out;
+    width: 315px;
+    .experiment_img {
+        height: 303px;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #323130;
+    }
+    .experiment_body {
+        background: $sky-blue;
+    }
+    .experiment_body,
+    .hidden_description {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        cursor: pointer;
+        bottom: -37px;
+        left: 0%;
+        width: 100%;
+        background: $sky-blue;
+    }
+    .experiment_description {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 8%;
+    }
+    .imgCardMain2 {
+        width: 56%;
+    }
+    .experiment_cont {
+        align-items: center;
+        background-color: #E0E8EB;
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+            margin: 1rem;
+        }
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width:1209px) {
+    .experiment_img {
+        margin-top: 48px !important;
+    }
+}

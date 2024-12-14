@@ -1,0 +1,312 @@
+@import '../../variables';
+
+.containerBanner {
+    padding: 0px;
+    height: 700px;
+
+    .topContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0px;
+        height: 510px;
+
+        .leftContainer {
+            width: 33.33333333%;
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            background-color: $sky-blue;
+            .containerLogo {
+                height: 190px;
+                display: flex;
+                align-items: center;
+
+                .logo {
+                    width: 307px;
+                    height: 83px;
+                    margin-right: 45px;
+                }
+            }
+        }
+
+        .rightContainer {
+            width: 66.66666667%;
+            background-color: $dark-blue;
+
+            .paragraph_1 {
+                color: white;
+                text-align: left;
+                font-size: 45px;
+                line-height: 1.1;
+                padding: 20px 40px 20px 40px;
+                letter-spacing: 1pt;
+                margin: 0px;
+                min-height: 195px;
+            }
+        }
+    }
+
+    .lowerContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0px;
+        height: 190px;
+
+        .leftContainer { 
+            width: 33.33333333%;
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            background-color: $sky-blue;
+
+            .containerButton {
+                height: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                margin-right: 100px;
+
+                .btnContactUs {
+                    border-radius: 0;
+                    border-color: $dark-blue;
+                    color: $dark-blue;
+                    width: 184px;
+                    height: 46px;
+                }
+        
+                .btnContactUs:hover {
+                    color: white;
+                    background-color: $dark-blue;
+                }
+            }
+        }
+
+        .rightContainer {
+            width: 66.66666667%;
+            background-color: $dark-blue; 
+
+            .paragraph_2 {
+                color: white;
+                text-align: left;
+                font-size: 20px;
+                padding: 20px 40px 20px 40px;
+            }
+        }
+
+    }
+    .containerImgBanner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 450px;
+
+        img {
+            width: 390px;
+            object-fit: cover;
+        }
+    }
+}
+
+.containerHeaderResponsive,
+.containerBannerResponsive {
+    display: none;
+}
+
+
+@media (max-width: 992px) {
+
+    .containerBanner {
+        display: none;
+    }
+
+    .containerHeaderResponsive {
+        display: block;
+        background-color: $sky-blue;
+        padding: 0px;
+    }
+
+    .headerResponsive {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 120px;
+
+        .containerImageResponsive {
+            display: inline;
+
+            .logoResponsive {
+                height: 83px;
+                width: 307px;
+                margin-top: 19px;
+            }
+        }
+
+
+
+        .btnContactUsResponsive {
+            width: 184px;
+            height: 46px;
+            margin-top: 37px;
+            border-radius: 0;
+            border-color: $dark-blue;
+            color: $dark-blue;
+        }
+
+        .btnContactUsResponsive:hover {
+            color: white;
+            background-color: $dark-blue;
+        }
+    }
+
+    .containerBannerResponsive {
+        display: block;
+        background-color: $dark-blue;
+        height: 770px;
+        padding: 21px 0px 0px 0px;
+
+        .paragraph1_Responsive {
+            font-size: 30px;
+            color: #FFFFFF;
+            text-align: center;
+            width: 95%;
+            min-height: 87px;
+            margin: auto;
+        }
+
+        .paragraph2_Responsive {
+            font-size: 25px;
+            color: #FFFFFF;
+            text-align: center;
+            width: 95%;
+            min-height: 200px;
+            margin: auto;
+            position: relative;
+        }
+
+        .carouselContainerResponsive {
+            height: 426px;
+            margin-top: 20px;
+
+            .sr-only {
+                display: none;
+            }
+
+            .item {
+                width: 100%;
+
+                .imageCarousel {
+                    width: 396px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    height: 355px;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    .headerResponsive {
+        height: 190px;
+
+        .containerImageResponsive {
+            display: block;
+            width: 100%;
+
+            .logoResponsive {
+                margin: 19px auto auto;
+                display: block;
+            }
+        }
+
+        .btnContactUsResponsive {
+            margin-top: 0px;
+        }
+    }
+
+}
+
+@media (max-width: 527px) {
+    .containerBannerResponsive {
+        .paragraph1_Responsive {
+            font-size: 20px !important;
+        }
+
+        .paragraph2_Responsive {
+            font-size: 15px !important;
+        }
+    }
+
+}
+
+@media (max-width: 712px) {
+    .containerBannerResponsive {
+        .paragraph1_Responsive {
+            font-size: 26px;
+        }
+
+        .paragraph2_Responsive {
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 438px) {
+
+    .logoResponsive {
+        width: 200px !important;
+        height: 60px !important;
+    }
+
+}
+
+@media (max-width: 1270px) { 
+
+    .containerImgBanner {
+        img {
+            width: 290px !important;
+        }
+    }
+
+    .paragraph_1 {
+        font-size: 34px !important;
+    }
+
+    .containerLogo{
+        width: 100% !important;
+        justify-content: center !important;
+
+        .logo{ 
+            margin: auto !important;
+        }
+    }
+
+    .containerButton {
+        margin: auto !important;
+    }
+    
+
+}
+
+@media (max-width: 1038px) { 
+    .containerLogo{
+        .logo{ 
+            width: 207px !important;
+            height: 59px !important;
+        }
+    }
+
+}

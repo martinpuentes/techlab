@@ -1,0 +1,77 @@
+@import '../../variables.scss';
+.containerMainItem {
+    width: 100%;
+    height: auto;
+    .containerItem1 {
+        position: relative;
+        padding: 43px 100px 43px 100px;
+        height: auto;
+        background-color: #ededed;
+        @media(max-width: 633px) { 
+            padding: 43px 20px 43px 20px;
+        }
+        h1 {
+            font-size: 35px;
+            color: #002f43;
+            max-height: 130px;
+            min-height: 66px;
+            @media(max-width: 500px) { 
+                font-size: 29px;
+                text-align: center;
+            }
+        }
+        p {
+            font-size: 20px;
+            font-family: $openRegular;
+
+            @media(max-width: 500px) { 
+                font-size: 15px;
+            }
+        }
+        .contentButtonTechnologies {
+            width: 100%;
+            position: absolute;
+            bottom: -27px;
+            padding: 0 110px 0 0;
+            right: 0;
+
+            @media(max-width: 630px) { 
+                display: flex;
+                justify-content: center;
+                padding: 0px;
+             }
+            button {
+                float: right;
+                background-color: #002f43;
+                font-size: 21px;
+                color: #fff;
+                width: 300px;
+                height: 55px;
+                text-decoration: underline;
+                font-family: $openRegular;
+                border: none;
+
+                @media(max-width: 494px) { 
+                    font-size: 19px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// More that 3 items
+@media(max-width: 1432px) { 
+    #three {
+        border-right: initial !important;
+        border-bottom: 1px solid;
+    }
+}
+
+// Just two items
+@media(max-width: 1048px) { 
+    #two {
+        border-right: initial !important;
+        border-bottom: 1px solid;
+    }
+}

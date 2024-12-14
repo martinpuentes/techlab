@@ -1,0 +1,38 @@
+.containerFooter {
+    .containerOptionItems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media(min-width:1366px) {
+        .containerOptionItems {
+            justify-content: center;
+        }
+    }
+    padding: 43px 122px 0 100px;
+    min-height: 250px;
+    h1 {
+        font-size: 24px;
+        color: #002f43;
+    }
+    .titleMain {
+        margin-bottom: 38px;
+    }
+    .optionItem {
+        width: 320px;
+        border-left-color: #000;
+        border-right-style: solid;
+        border-right-width: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    @media(max-width:985px) {
+        .optionItem {
+            border-right-style: initial !important;
+            border-right-width: initial !important;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+    }
+}

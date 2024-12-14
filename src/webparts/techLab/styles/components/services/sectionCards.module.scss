@@ -1,0 +1,229 @@
+@import '../../variables';
+.boxResources1 {
+    background-color: rgba(214,230,218, 0.68);
+}
+
+.boxResources2 {
+    background-color: rgba(203,216,223, 0.68);;
+}
+
+.boxResources3 {
+    background-color: rgba(206,206,206, 0.6);;
+}
+
+.cardsBodyService {
+    .row {
+        height: auto;
+    }
+}
+
+@media (max-width:992px) {
+    .cardsBodyService {
+        .row {
+            height: initial !important;
+            background-color: aqua;
+        }
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: initial !important;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+.boxResources1,
+.boxResources2,
+.boxResources3 {
+    width: 40%;
+}
+
+#containerItemService {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    height: auto;
+}
+
+
+/* card  explore */
+
+#exploreServices {
+    /*  box-shadow: 2px 2px 4px 4px #dfdede; */
+    margin: 10px;
+    transition: all 0.3s ease-out;
+    .explore_body,
+    .hidden_descriptionServices {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        cursor: pointer;
+        left: 0%;
+        width: 100%;
+        background: $super-light-green;
+    }
+    .explore_description {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 2%;
+    }
+    .imgCardMain1 {
+        width: 156px;
+    }
+    .explore_body {
+        background: $super-light-green;
+    }
+    .explore_cont {
+        align-items: center;
+        background-color: #E6F0E8;
+        display: flex;
+        flex-direction: column;
+        height: 158px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        h4 {
+            color: #3C3C3C;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            color: #3C3C3C;
+            font-size: 0.65rem;
+            margin: 0;
+        }
+    }
+}
+
+
+/* /card  explore */
+
+
+/* card  experiment */
+
+#experimentServices {
+    /*   box-shadow: 2px 2px 4px 4px #dfdede; */
+    margin: 10px;
+    transition: all 0.3s ease-out;
+    .experiment_body {
+        background: $sky-blue;
+    }
+    .experiment_body,
+    .hidden_descriptionServices {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        cursor: pointer;
+        left: 0%;
+        width: 100%;
+        background: $sky-blue;
+    }
+    .experiment_description {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 2%;
+    }
+    .imgCardMain2 {
+        width: 156px;
+    }
+    .experiment_cont {
+        align-items: center;
+        background-color: #E0E8EB;
+        display: flex;
+        flex-direction: column;
+        height: 158px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            font-size: 0.65rem;
+            margin: 0;
+        }
+    }
+}
+
+
+/* /card  experiment */
+
+
+/* card  share it */
+
+#shareServices {
+    /*  box-shadow: 2px 2px 4px 4px #dfdede; */
+    margin: 10px;
+    transition: all 0.3s ease-out;
+    .share_body {
+        background: $dark-gray;
+    }
+    .share_body,
+    .hidden_descriptionServices {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        cursor: pointer;
+        left: 0%;
+        width: 100%;
+        background: $dark-gray;
+    }
+    .imgCardMain3 {
+        width: 156px;
+    }
+    .share_description {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 2%;
+    }
+    .share_cont {
+        align-items: center;
+        background-color: #CECECE;
+        display: flex;
+        flex-direction: column;
+        height: 158px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        h4 {
+            color: #3C3C3C;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            color: #3C3C3C;
+            font-size: 0.65rem;
+            margin: 0;
+        }
+    }
+}
+
+.titleMainCard {
+    text-align: justify;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/* /card  share it */

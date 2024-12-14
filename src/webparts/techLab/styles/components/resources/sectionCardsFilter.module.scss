@@ -1,0 +1,173 @@
+@import '../../variables';
+#bgColor1 {
+    background-color: rgba($color: $sky-blue, $alpha: 0.3)
+}
+
+#bgColor2 {
+    background: #EBF3DB;
+    background-color: rgba($color: $light-green, $alpha: 0.3);
+}
+
+#bgColor3 {
+    background-color: rgba($color: $light-blue, $alpha: 0.3);
+}
+
+.cardMain {
+    width: 64%
+}
+
+.contentButtonMobile {
+    display: flex;
+    justify-content: end;
+    display: none;
+
+    .buttonMobile {
+        bottom: 0;
+        right: 0;
+        background-color: $dark-blue;
+        border: none;
+        width: 118px;
+        height: 55px;
+        text-decoration: underline;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+
+.contentButton {
+    bottom: 0;
+    right: 0;
+    background-color: $dark-blue;
+    border: none;
+    color: #fff;
+    width: 118px;
+    height: 55px;
+    text-decoration: underline;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.sectionCardResources {
+    height: 209px;
+    width: 85%;
+    display: flex;
+    font-family: $openRegular;
+    color: $dark-blue;
+}
+
+.contentItemsReources {
+    margin-bottom: 20px;
+    p {
+        font-family: $openRegular;
+    }
+}
+
+.cardImgResources {
+    height: 100%;
+    width: 35%;
+    img {
+        object-fit: cover;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 0.5s;
+    }
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cardContentResources {
+    background-color: rgba(203, 216, 223, .3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 100%;
+    width: 65%;
+}
+
+.dateResources {
+    padding: 15px 20px 0;
+    font-size: 12px;
+    p {
+        margin-bottom: 0px; 
+    }
+}
+
+.titleResources {
+    color: $dark-blue;
+    padding: 0 20px 0 20px;
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.descriResources {
+    padding: 0 20px;
+}
+
+.technologyResources {
+    color: $dark-blue;
+    padding: 0 20px;
+    width: 70%;
+    p {
+        margin: 0px;
+    }
+    .subText {
+        margin-left: 6px;
+
+        a {
+            text-decoration: none;
+            color: $dark-blue;
+        }
+    }
+}
+
+.typeResources {
+    color: $dark-blue;
+    padding: 0 20px;
+}
+
+@media(max-width:992px) {
+    .contentButton {
+        display: none;
+    }
+    .cardImgResources {
+        display: none !important;
+    }
+    .cardContentResources {
+        width: 100%;
+        height: auto !important;
+    }
+    .typeResources,
+    .technologyResources,
+    .descriResources {
+        display: none !important;
+    }
+    .sectionCardResources {
+        height: auto !important;
+    }
+    .titleResources {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    .contentButtonMobile {
+        display: flex !important;
+    }
+}
+
+@media (max-width:693px) { 
+    .sectionCardResources {
+        width: 100% !important;
+        padding: 0px;
+    }
+}

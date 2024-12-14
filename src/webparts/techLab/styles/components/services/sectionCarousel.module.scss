@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.sectionCarouselService{
+    margin-bottom: 20px;
+}
+
+.titleMainCarouselService {
+    color: $dark-blue;
+    padding-left: 14%;
+    padding-top: 20px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.bgCaoruselVideo {
+    cursor: pointer;
+}
+.playIcon {
+    cursor: pointer;
+}
+
+.react-multi-carousel-item{
+    padding: 0px 15px 0px 15px;
+}
+
+@media (max-width:992px) { 
+    .titleMainCarouselService {
+        padding-left: initial !important;
+        text-align: center;
+    }
+}

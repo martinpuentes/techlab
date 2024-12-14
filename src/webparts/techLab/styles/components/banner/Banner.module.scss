@@ -1,0 +1,159 @@
+@import '../../variables';
+
+#banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+    // @media (max-width: 600px) {
+    //     height: 100vh;
+    // }
+
+    p {
+        font-family: $openRegular;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .icon_bl {
+        @media (max-width: 1024px) {
+            transform: scale(0.8);
+        }
+
+        @media (max-width: 600px) {
+            transform: scale(0.6) !important;
+        }
+    }
+}
+
+.icon_bl {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+
+    @media (max-width: 920px) {
+        transform: scale(0.55);
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.faAngleDown {
+    bottom: 0;
+    color: #005073;
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+.personaje {
+    height: auto;
+    width: 25%;
+    left: 17vw;
+    //margin-top: 12%;
+}
+
+.logo2 {
+    display: none;
+    //height: 505px;
+    //object-fit: cover;
+}
+
+@media (max-width:992px) {
+    .btnContacHome {
+        display: initial !important;
+        right: 7%;
+        position: absolute;
+        top: 20px;
+        width: 113px;
+    }
+
+    .logoHomeTechlab {
+        width: 163px !important;
+        top: 0 !important;
+        padding: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo2 {
+        display: block;
+        width: 100%;
+    }
+
+    .personaje {
+        width: 320px !important;
+        left: initial;
+        top: 77px;
+        margin-top: initial !important;
+    }
+
+    .descriTextBannerHome {
+        right: initial !important;
+        color: initial !important;
+        width: 100% !important;
+        background-color: #D6E6DA;
+        padding: 7%;
+        color: #000000;
+        position: absolute;
+        top: 77% !important;
+    }
+
+    .logoHomeTechlab {
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    // #banner {
+    //     height: 652px;
+    // }
+
+    .contentItemsHome {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 75px;
+        background: #7eaabaa1;
+        z-index: 1;
+    }
+}
+
+.logoHomeTechlab {
+    //right: 12%;
+    //width: 45%;
+    top: 31%;
+}
+
+.descriTextBannerHome {
+    position: absolute;
+    right: 20%;
+    color: #fff;
+    font-size: 20px;
+    width: 37%;
+    text-align: initial;
+    top: 59%;
+    height: 151px;
+    align-items: center;
+}
+
+.btnContacHome {
+    display: none;
+}
+
+.faAngleDown {
+    display: none;
+}

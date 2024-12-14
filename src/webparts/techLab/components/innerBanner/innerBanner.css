@@ -1,0 +1,25 @@
+.banner-title{
+    color: #FFFFFF;
+    font-size:3rem;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .banner-title{
+        text-align: center;
+    }
+  
+    
+  
+  }
+
+
+.visit-button{
+    padding: 0.7rem 3rem;
+    background-color: #FFFFFF;
+    border: solid 0.9px #002F43F4;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight:400;
+    margin-top: 1rem;
+    cursor: pointer;
+}

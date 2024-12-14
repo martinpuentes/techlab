@@ -1,0 +1,45 @@
+@import '../../../variables';
+
+@media print {
+    @page {
+        size: legal portrait;
+        zoom: 75%;
+        margin: 8.5mm 1.5mm 0mm 1.5mm;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    .containerHeader {
+        height: 122px !important;
+        margin-bottom: 30px;
+        .sectionLogo{
+            display: flex !important;
+            height: 100% !important;
+            background-color: white !important;
+
+            .containerButtomGlobal{
+                display: none !important;
+            }
+        }
+    }
+
+    .navbarMain {
+        display: none !important;
+    }
+
+    .imageSection{
+        max-height: 300px !important;
+    }
+
+    .contentButtonDownload{
+        display: none;
+    }
+
+    .contentButtonTechnologies{
+        display: none !important;
+    }
+
+    .sectionProblem {
+        page-break-before:always;
+    }
+}

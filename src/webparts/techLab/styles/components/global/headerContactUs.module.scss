@@ -1,0 +1,169 @@
+    @import '../../variables';
+    .containerHeader {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0px;
+        height: 205px;
+        .sectionLogo {
+            width: 40%;
+            .containerLogo {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 200px;
+                img {
+                    margin: 0px 45px 0px 0px;
+                    width: 307px;
+                    height: 83px;
+                }
+            }
+        }
+        .sectionContactUs {
+            width: 60%;
+            background-color: #EFF3F5;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .containerContactUs {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .title {
+                    color: $dark-blue;
+                    font-family: $openRegular;
+                    display: inline;
+                    color: #002f43;
+                    font-size: 35px;
+                    font-weight: 350;
+                    height: 46px;
+                    margin: 0px 15px 0px 15px;
+                }
+                .btnContactUs {
+                    display: inline;
+                    height: 46px;
+                    border-radius: 0;
+                    border-color: $dark-blue;
+                    color: $dark-blue;
+                    width: 184px;
+                    margin: 0px 15px 0px 15px;
+                }
+                .btnContactUs:hover {
+                    color: white;
+                    background-color: $dark-blue;
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:992px) {
+        .containerHeader,
+        .sectionLogo {
+            height: 120px;
+            width: 100% !important;
+        }
+        .sectionContactUs {
+            display: none !important;
+
+            .title {
+                display: none !important;
+            }
+        }
+        .containerLogo {
+            height: initial !important;
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .containerButtomGlobal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            display: flex !important;
+            .btnContactUsResponsive {
+                height: 46px;
+                border-radius: 0;
+                border-color: #002f43;
+                color: #002f43;
+                width: 184px;
+            }
+        }
+        .sectionLogo {
+            display: flex;
+        }
+        .containerLogo {
+            img {
+                margin: 0px !important;
+                width: 100%;
+            }
+        }
+    }
+    
+    @media (max-width:784px) {
+        .containerLogo {
+            justify-content: center;
+        }
+        .containerLogo {
+            img {
+                margin-left: initial !important;
+            }
+        }
+    }
+    
+    @media(max-width:831px) {
+        .containerLogo {
+            height: 125px;
+            width: 100% !important;
+            img {
+                margin-top: 16px !important;
+            }
+        }
+        .sectionLogo {
+            display: initial !important;
+            height: 174px;
+            padding-top: 10px;
+        }
+        .containerButtomGlobal {
+            width: 100% !important;
+            position: relative;
+            top: 17px;
+        }
+        .containerHeader {
+            height: 174px;
+        }
+    }
+
+    @media (max-width:1152px) { 
+        .containerLogo {
+            justify-content: center !important;
+
+            img {
+                margin: 0px !important;
+            }
+        }
+     }
+    
+    .containerButtomGlobal {
+        display: none;
+    }
+    
+    .sectionTextMainServices {
+        padding-left: 36%;
+        padding-right: 7%;
+        margin-top: 82px;
+    }
+    
+    .content1Service1 {
+        display: flex;
+        align-items: center;
+    }

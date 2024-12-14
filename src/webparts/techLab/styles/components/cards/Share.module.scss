@@ -1,0 +1,73 @@
+@import '../../variables';
+
+#share {
+    /*  box-shadow: 2px 2px 4px 4px #dfdede; */
+    margin: 10px;
+    transition: all 0.3s ease-out;
+    width: 315px;
+    .share_img {
+        height: 303px;
+        width: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: #323130;
+    }
+    .share_body {
+        background: $dark-gray;
+    }
+    .share_body,
+    .hidden_description {
+        display: flex;
+        justify-content: center;
+        font-size: xx-large;
+        cursor: pointer;
+        bottom: -37px;
+        left: 0%;
+        width: 100%;
+        background: $dark-gray;
+    }
+    .imgCardMain3 {
+        width: 35%;
+    }
+    .share_description {
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 8%;
+    }
+    .share_cont {
+        align-items: center;
+        background-color: #CECECE;
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        h4 {
+            color: #3C3C3C;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        p {
+            color: #3C3C3C;
+            font-size: 1rem;
+            margin: 1rem;
+        }
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width:1209px) {
+    .share_img {
+        margin-top: 48px !important;
+    }
+}

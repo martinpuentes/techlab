@@ -1,0 +1,58 @@
+@import '../variables';
+
+.containerTextInitialPage {
+    background-color: $super-light-green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    p {
+        font-size: 20px;
+        text-align: center;
+        color: $dark-blue;
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+.CanvasComponent.LCS .row {
+    margin: 0px;
+}
+
+.buttonReadLess, .buttonReadMore {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .containerTextInitialPage {
+        padding-bottom: 0px;
+
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .buttonReadLess {
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            font-size: xx-large;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .buttonReadMore {
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            font-size: xx-large;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,226 @@
+@import '../../../variables';
+
+.headerTexts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .categoriesContainer {
+        width: 100%;
+        height: 52px;
+
+        .categoiresImages {
+            display: block;
+            float: right;
+            position: relative;
+            top: 29px;
+            z-index: 1;
+
+            #img1 {
+                width: 100px;
+                height: 30px;
+                margin-right: 15px;
+            }
+
+            #img2 {
+                width: 150px;
+                height: 30px;
+                margin-right: 15px;
+            }
+
+            #img3 {
+                width: 90px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.contentCard {
+
+    height: 383px;
+
+    .descriptionSection {
+
+        height: 100%;
+        background-color: #ededed;
+
+        @media (max-width:658px) { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .textsContainer {
+            height: 100%;
+            padding: 20px 10px 20px 10px;
+
+            @media (max-width:992px) { 
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+
+            @media (max-width:658px) { 
+                padding-bottom: 0px;
+            }
+
+            .dateCard {
+                font-size: 18px;
+                color: $dark-blue;
+            }
+
+            .titleCard>h1 {
+                font-size: 35px;
+                color: $dark-blue;
+                font-weight: bold;
+                max-height: 130px;
+                min-height: 66px;
+
+                @media (max-width:992px) {  
+                    font-size: 25px;
+                }
+            }
+
+            .descriCard {
+                font-size: 17px;
+                color: $dark-blue;
+                height: 110px;
+                display: flex;
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .tagCard {
+                font-size: 17px;
+                color: $dark-blue;
+                margin-top: 15px;
+                position: absolute;
+                top: 293px;
+                width: 390px;
+
+                .subText {
+                    font-weight: bold;
+                    
+                    a {
+                        color: $dark-blue;
+                        text-decoration: none !important;
+                    }
+                }
+            }
+        }
+
+        .contentButtonDownload {
+            font-size: 25px;
+            position: relative;
+            bottom: 30px;
+            right: 0;
+            left: 60%;
+            background-color: $dark-blue;
+            border: none;
+            color: #fff;
+            width: 180px;
+            height: 55px;
+            text-decoration: underline;
+
+            @media (max-width:658px) { 
+                margin: 0px auto 10px auto;
+                font-size: 20px;
+                position: initial !important;
+            }
+        }
+    }
+
+    .imageSection {
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.headerTextsResponsive {
+    display: none;
+}
+
+@media (max-width:992px) {
+
+    .headerTexts {
+        display: none;
+    }
+
+    .headerTextsResponsive {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #d6e6da;
+        height: 70px;
+
+        #containerCenter {
+            width: 35% !important;
+            border-right: 1px solid #BBD688;
+            border-left: 1px solid #BBD688;
+        }
+
+        .containerImagesResponsive {
+            width: 20%;
+            justify-content: center;
+            display: flex;
+            height: 100%;
+            align-items: center;
+
+            #img1 {
+                width: 103px;
+                height: 31px;
+            }
+
+            #img2 {
+                width: 142px;
+                height: 31px;
+            }
+
+            #img3 {
+                width: 85px;
+                height: 31px;
+            }
+        }
+    }
+
+    .contentCard {
+        height: auto !important;
+
+        .imageSection {
+            width: 100%;
+            height: 300px !important;
+        }
+
+        .descriptionSection {
+            width: 100%;
+            height: auto !important;
+
+            .descriCard {
+                height: auto !important;
+            }
+
+            .tagCard {
+                position: relative !important;
+                width: auto !important;
+                margin-top: 30px !important;
+                margin-bottom: 15px !important;
+                top: 0px !important;
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .contentButtonDownload {
+        width: 163px !important;
+        height: 76px !important;
+        left: 68% !important;
+        bottom: 41px !important;
+    }
+
+}

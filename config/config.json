@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tech-lab-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/techLab/TechLabWebPart.js",
+          "manifest": "./src/webparts/techLab/TechLabWebPart.manifest.json"
+        }
+      ]
+    }
+    
+  },
+  "externals": {},
+  "localizedResources": {
+    "TechLabWebPartStrings": "lib/webparts/techLab/loc/{locale}.js",
+    "OldTechLabSharepointWebPartStrings": "lib/webparts/oldTechLabSharepoint/loc/{locale}.js"
+  }
+}

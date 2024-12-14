@@ -1,0 +1,50 @@
+@import '../../variables';
+.containerCardsItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardSolutions {
+    p {
+        font-family: $openRegular;
+    }
+    margin-right: 26px;
+    margin-bottom: 63px;
+    width: 330px;
+    height: auto;
+    .titleMain {
+        padding: 0 0 0 18px;
+        background-color: #f1f2f4;
+        color: $dark-blue;
+    }
+    .companyName {
+        min-height: 60px;
+        padding: 0 0 0 18px;
+        color: $dark-blue;
+    }
+    .duoItems {
+        min-height: 105px;
+        padding: 0 0 0 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .containerItemsSolution {
+            min-height: 55px;
+            align-items: center;
+            display: flex;
+        }
+        p {
+            padding-right: 10px;
+        }
+        b {
+            color: $dark-blue;
+        }
+        button {
+            background-color: #002f43;
+            color: #fff;
+            width: 118px;
+            height: 55px;
+        }
+    }
+}

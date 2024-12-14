@@ -1,0 +1,179 @@
+@import '../../variables';
+
+.containerCards {
+
+    @media (max-width:508px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    margin-top: 40px;
+
+    img {
+        height: 383.58px;
+        border-radius: 0%;
+    }
+
+    .containerTitleSection {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
+        font-size: 18px;
+        margin-bottom: 30px;
+
+        .titleCardSection {
+            display: inline;
+            color: $dark-blue;
+            opacity: 0.48;
+            letter-spacing: 1.5px;
+            font-size: 20px;
+
+        }
+
+        strong {
+            position: relative;
+            color: $dark-blue;
+            font-size: 20px;
+            letter-spacing: 0;
+        }
+    }
+
+    .containerCardDescription {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .titleCard {
+            padding: 10px;
+            font-size: 22px;
+            text-align: center;
+            line-height: 100%;
+        }
+
+        .cardDescription {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 15px;
+            color: $black;
+            text-align: center;
+        }
+
+    }
+
+    .card {
+        width: 350px;
+        height: 656px;
+        padding-bottom: 60px;
+        border: none;
+    }
+
+    .containerCardsSection {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: start;
+        margin: auto;
+
+        @media (min-width:1287px) {
+            width: 1170px;
+        }
+
+        @media (max-width:1287px) {
+            width: 780px;
+        }
+
+        @media (max-width:896px) {
+            width: 390px;
+        }
+
+        @media (max-width:508px) {
+            width: 100%;
+        }
+
+        .containerCardAboutUs {
+            justify-content: center;
+            display: flex;
+            margin: 0px 20px 0px 20px;
+
+            @media (max-width:508px) {
+                margin: auto;
+            }
+        }
+    }
+
+    .flipCard {
+        // background-color: transparent;
+        // border: 1px solid #f1f1f1;
+        perspective: 1000px;
+        /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flipCardInner {
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .card:hover .flipCardInner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flipCardFront,
+    .flipCardBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flipCardFront {
+        background-color: #bbb;
+    }
+
+    /* Style the back side */
+    .flipCardBack {
+        transform: rotateY(180deg);
+    }
+}
+
+@media (max-width: 769px) {
+
+    .containerTitleSection {
+
+        .titleCardSection {
+            font-size: 30px;
+        }
+
+        strong {
+            font-weight: 400;
+            font-size: 30px;
+            text-align: center;
+        }
+
+    }
+
+}
+
+// @media (max-width: 1335px) {
+//     .containerCardsSection {
+//         width: 100% !important;
+//     }
+// }
+
+@media (max-width: 1166px) {
+    .cardDescription {
+        max-height: 180px !important;
+        overflow-y: auto !important;
+        width: 90% !important;
+    }
+}

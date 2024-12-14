@@ -1,0 +1,83 @@
+@import '../../variables';
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardSolutions {
+    p {
+        font-family: $openRegular;
+    }
+    margin-right: 26px;
+    margin-bottom: 63px;
+    width: 330px;
+    height: auto;
+    .titleMain {
+        padding: 0 0 0 18px;
+        background-color: #f1f2f4;
+        color: $dark-blue;
+    }
+    .companyName {
+        min-height: 60px;
+        padding: 0 0 0 18px;
+        color: $dark-blue;
+    }
+    .cardContent {
+        min-height: 330px;
+        padding: 0 18px 10px 18px;
+        background: #f1f2f4;
+        .descri {
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 7;
+                -webkit-box-orient: vertical;
+                padding-top: 1rem;
+            }
+        }
+    }
+    .duoItems {
+        min-height: 105px;
+        padding: 0 0 0 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        .containerItemsSolution {
+            min-height: 55px;
+            align-items: center;
+            display: flex;
+        }
+        p {
+            padding-right: 10px;
+        }
+        b {
+            color: $dark-blue;
+        }
+        button {
+            background-color: #002f43;
+            color: #fff;
+            width: 118px;
+            height: 55px;
+        }
+    }
+    .forItems {
+        display: flex;
+        flex-wrap: wrap;
+        /*      justify-content: space-between; */
+        .tagItem {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            /*    width: 130px; */
+            width: auto;
+            background: #e1e2e4;
+            margin: 4px;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

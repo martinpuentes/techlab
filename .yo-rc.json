@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "version": "1.14.0",
+    "libraryName": "tech-lab-2022",
+    "libraryId": "823d1cd9-f6e5-46ac-acaa-2c8d592c48f8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "tech-lab-2022",
+    "solutionShortDescription": "tech-lab-2022 description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "nodeVersion": "16.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "componentType": "webpart"
+  }
+}

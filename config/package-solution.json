@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "tech-lab-2022-client-side-solution",
+    "id": "823d1cd9-f6e5-46ac-acaa-2c8d592c48f8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "tech-lab-2022 description"
+      },
+      "longDescription": {
+        "default": "tech-lab-2022 description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "tech-lab-2022 Feature",
+        "description": "The feature that activates elements of the tech-lab-2022 solution.",
+        "id": "7baa101c-dd19-4cad-af3a-1c134ea45b86",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/tech-lab-2022.sppkg"
+  }
+}

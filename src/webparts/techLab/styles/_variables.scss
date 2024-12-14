@@ -1,0 +1,24 @@
+//Color's
+// PRIMARY COLORS
+$dark-blue: #002f43;
+$light-gray: #d3d2d1;
+$dark-gray: #aeadab;
+$black: #3c3b3b;
+// SECUNDARY COLORS (backgrounds, titles and certain buttons)
+$light-blue: #196e8c;
+$sky-blue: #cbd8df;
+$dark-green: #83b38f;
+$light-green: #bbd688;
+$super-light-green: #d6e6da;
+// font family Open Sans regular and bold
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+$openRegular: 'Open Sans',
+sans-serif;
+.openBold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+// Others
+$white: #FFFFFF;
+$super-dark-gray: #7F7F7F;

@@ -1,0 +1,64 @@
+// components
+@import '../styles/components/banner/Banner.module.scss';
+@import '../styles/components/cards/Cards.module.scss';
+@import '../styles/components/cards/Experiment.module.scss';
+@import '../styles/components/cards/Explore.module.scss';
+@import '../styles/components/cards/Share.module.scss';
+@import '../styles/components/homeVideo/Video.module.scss';
+@import '../styles/components/aboutUs/cardSection.module.scss';
+@import '../styles/components/aboutUs/headerSection.module.scss';
+@import '../styles/components/ourWork/sectionCardsFilter.module.scss';
+@import '../styles/components/ourWork/detailsOurWork/detailsOurWork.module.scss';
+@import '../styles/components/resources/sectionCardsFilter.module.scss';
+@import '../styles/components/ourWork/detailsOurWork/headerSection.module.scss';
+@import '../styles/components/ourWork/detailsOurWork/descriptionMainSection.module.scss';
+@import '../styles/components/ourWork/detailsOurWork/resourcesCardsSection.module.scss';
+@import '../styles/components/services/sectionCards.module.scss';
+@import '../styles/components/services/sectionCarousel.module.scss';
+@import '../styles/components/services/sectionBanner.module.scss';
+@import '../styles/components/solutions/SectionCardsFiltersSolutions.module.scss';
+@import '../styles/components/technologies/SectionInfoTechnologies.module.scss';
+@import '../styles/components/technologies/FooterTechnologies.module.scss';
+@import '../styles/components/technologies/SectionCardsTechnologies.module.scss';
+@import '../styles/components/technologies/SectionBlockTecnologies.module.scss';
+@import '../styles/components/technologies/SectionSubCardsTechnologies.module.scss';
+@import '../styles/components/technologies/SectionMinFooter.module.scss';
+@import '../styles/components/technologies/SectionTechIDB.module.scss';
+@import '../styles/components/footer/Footer.module.scss';
+// globals
+@import '../styles/components/global/headerContactUs.module.scss';
+@import '../styles/components/global/carouselCards.module.scss';
+@import '../styles/components/global/sectionSelect.module.scss';
+@import '../styles/components/navbar/Navbar.module.scss';
+@import '../styles/components/navbar/navBarObservatory.module.scss';
+// fonts
+@import '../styles/custom/fonts.module.scss';
+// pages
+@import '../styles/pages/HomeComponent.module.scss';
+@import '../styles/pages/AboutUs.module.scss';
+@import '../styles/pages/Service.module.scss';
+@import '../styles/pages/OurWork.module.scss';
+@import '../styles/pages/Technologies.module.scss';
+@import '../styles/pages/Resources.module.scss';
+// variables Colors
+@import 'variables';
+
+/* remove  padding sharepoint */
+
+:root {
+    font-size: 16px;
+}
+
+.CanvasZone {
+    padding: 0 !important;
+    .k_c_50a7110f {
+        max-width: 100% !important;
+        padding: 0 !important;
+        .CanvasSection {
+            padding: 0 !important;
+            .ControlZone {
+                padding: 0 !important;
+            }
+        }
+    }
+}

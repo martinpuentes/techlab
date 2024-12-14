@@ -1,0 +1,52 @@
+
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 18rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.banner-title-general{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-text{
+    
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px){
+    
+    .banner-text{
+        font-size: 1rem;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 768px){
+    
+    .banner-title-general{
+        font-size: 2rem;
+    }
+
+    
+
+}

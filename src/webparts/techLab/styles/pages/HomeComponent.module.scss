@@ -1,0 +1,109 @@
+:root {
+	font-size: 16px;
+}
+[id^=workbenchPageContent]  {
+	margin: 0 !important;
+    border: 0 !important;
+    max-width: 100% !important;
+}
+
+[class^=CanvasZone] {
+	margin: 0 !important;
+	max-width: 100% !important;
+}
+
+[class^=sp-appBar] {
+	display: none !important;
+}
+
+[class^=ControlZone ] {
+	margin: 0 !important;
+}
+
+[class^=f_a_50a7110f] {
+	max-width: 100% !important;
+}
+
+@import '../variables';
+
+#home-sections{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2em 0;
+	h3{
+		color: #002f43;
+		font-size: 28px;
+		font-weight: bold;
+		margin: 0 0 20px;
+
+		@media (max-width:516px) {
+			font-size: 18px;
+		}
+		display: block;
+		a{
+			text-decoration: none !important;
+			color: #002f43;
+		}
+	}
+	p{
+		color: #002f43;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0 0 20px;
+
+
+        @media (max-width:516px) {
+            font-size: 15px;
+        }
+	}
+
+
+	.home-cards{
+		display: grid;		
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		grid-auto-rows: 300px;
+		gap: 1em 1em;
+		color: #002f43;
+	}
+
+	@media (max-width: 516px){
+		.home-cards{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 3em;
+		}
+
+		.home-cards-media{
+			height: 200px;
+		}
+
+		.reverse{
+			flex-direction: column-reverse;
+		}
+	}
+
+	
+
+	.home-cards-content{
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	
+
+	.btnHome {
+		border-radius: 0;
+		border-color: $dark-blue;
+		color: $dark-blue;
+		width: 184px;
+		height: 46px;
+	}
+
+	.btnHome:hover {
+		color: white;
+		background-color: $dark-blue;
+	}
+}
