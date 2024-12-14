@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## **Versión nodeJs**
 `nvm install 14.19.1` Fermium
 
@@ -61,6 +60,3 @@ Una tarea de utilidad se incluye en cada proyecto SharePoint Framework en forma 
 Una vez que un proyecto se haya creado con el generador de Yeoman para SharePoint Framework, ejecute el siguiente comando desde dentro de la carpeta raíz del proyecto.
 
 `gulp trust-dev-cert`
-=======
-# Regional
->>>>>>> 38a20fb81cdb24b573ba34ae14f12ff0dde41771
